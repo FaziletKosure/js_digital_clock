@@ -4,30 +4,39 @@ body {
   background-image: url("unnamed.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center center; */
   font-family: "Poppins", sans-serif;
   background-position: center center;
   min-height: 100vh;
 }
 span {
+  position: absolute;
   min-width: 200px;
 }
-.am-pm {
-  margin-left: 10px;
+
+.hour {
+  left: 50px;
+}
+.min {
+  left: 210px;
+}
+.sec {
+  left: 370px;
+}
+.am_pm {
+  left: 520px;
 }
 #clock {
   font-size: 100px;
   text-align: center;
-  width: 900px;
-  border: 2px solid black;
-  background-color: purple;
+  width: 750px;
+
+  background-color: rgb(191, 113, 75);
   color: white;
   height: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -450px;
-  margin-top: -100px;
+  position: relative;
+  top: 80%;
+  left: 10%;
+  margin-top: 200px;
   padding: 30px 50px;
   border-radius: 5px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);

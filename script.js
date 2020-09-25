@@ -19,8 +19,8 @@ function showTime() {
     min = min < 10 ? "0" + min : min; 
     sec = sec < 10 ? "0" + sec : sec; 
 
-    let currentTime = `<span style="min-width:150px" class="hour">${hour}</span> : 
-<span  style="min-width:150px" class="min">${min}</span> : <span style="min-width:150px"  class="sec">${sec}</span> <span style="min-width:150px" class="am_pm">${am_pm}</span>`; 
+    let currentTime = `<span class="hour">${hour} : </span>  
+<span  class="min">${min} : </span><span  class="sec">${sec}</span> <span class="am_pm">${am_pm}</span>`; 
 
     document.getElementById("clock") 
         .innerHTML = currentTime; 
