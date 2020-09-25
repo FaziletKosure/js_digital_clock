@@ -19,14 +19,12 @@ function showTime() {
     min = min < 10 ? "0" + min : min; 
     sec = sec < 10 ? "0" + sec : sec; 
 
-    let currentTime = `${hour} : 
-        ${min} : <span>${sec}    </span>     ${am_pm}`; 
+    let currentTime = `<span style="min-width:150px" class="hour">${hour}</span> : 
+<span  style="min-width:150px" class="min">${min}</span> : <span style="min-width:150px"  class="sec">${sec}</span> <span style="min-width:150px" class="am_pm">${am_pm}</span>`; 
 
     document.getElementById("clock") 
         .innerHTML = currentTime; 
-    document.getElementsByTagName("span")[0].style.maxWidth="300px"
-    // document.getElementsByTagName("span")[0].style.position="fixed"
-    document.getElementsByTagName("span")[0].style.right="400px"
+   
     
 } 
 

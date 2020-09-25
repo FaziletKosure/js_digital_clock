@@ -10,7 +10,10 @@ body {
   min-height: 100vh;
 }
 span {
-  width: 400px !important;
+  min-width: 200px;
+}
+.am-pm {
+  margin-left: 10px;
 }
 #clock {
   font-size: 100px;
