@@ -1,9 +1,10 @@
-setInterval(showTime, 1000); 
+
+//Days
 let dayNames = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 let time = new Date();
 let DateString = '';
-for (let i = 0; i < 7; i++) {
+for (let i = 0; i < dayNames.length; i++) {
   if (i == time.getDay()) {
     DateString += "<span class='clock__date--curr'>" + dayNames[i] + "</span> ";
   } else {
@@ -12,7 +13,8 @@ for (let i = 0; i < 7; i++) {
 }
 document.querySelector(".clock__date").innerHTML=DateString;
 
-
+//digital Clock
+setInterval(showTime, 1000); 
 
 function showTime() { 
     let time = new Date();
