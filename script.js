@@ -1,6 +1,21 @@
 setInterval(showTime, 1000); 
+let dayNames = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+let time = new Date();
+let DateString = '';
+for (let i = 0; i < 7; i++) {
+  if (i == time.getDay()) {
+    DateString += "<span class='clock__date--curr'>" + dayNames[i] + "</span> ";
+  } else {
+    DateString += "<span>" + dayNames[i] + "</span> ";
+  }
+}
+document.querySelector(".clock__date").innerHTML=DateString;
+
+
+
 function showTime() { 
-    let time = new Date(); 
+    let time = new Date();
     let hour = time.getHours(); 
     let min = time.getMinutes(); 
     let sec = time.getSeconds(); 
@@ -22,10 +37,8 @@ function showTime() {
     let currentTime = `<span class="hour">${hour} : </span>  
 <span  class="min">${min} : </span><span  class="sec">${sec}</span> <span class="am_pm">${am_pm}</span>`; 
 
-    document.getElementById("clock") 
-        .innerHTML = currentTime; 
-   
-    
+   let clock= document.getElementById("clock") 
+        clock.innerHTML = currentTime;   
 } 
 
 showTime(); 

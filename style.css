@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+html {
+  font: normal 36px sans-serif;
+  text-align: center;
+  width: 100%;
+}
 
 body {
   background-image: url("unnamed.jpg");
@@ -9,20 +14,23 @@ body {
   min-height: 100vh;
 }
 span {
-  position: absolute;
   min-width: 200px;
 }
 
 .hour {
+  position: absolute;
   left: 50px;
 }
 .min {
-  left: 210px;
+  position: absolute;
+  left: 220px;
 }
 .sec {
+  position: absolute;
   left: 370px;
 }
 .am_pm {
+  position: absolute;
   left: 520px;
 }
 #clock {
@@ -40,4 +48,16 @@ span {
   padding: 30px 50px;
   border-radius: 5px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+
+.clock__date {
+  font-size: 0.6rem;
+  color: grey;
+  position: absolute;
+  z-index: 1;
+  margin-left: 20%;
+}
+.clock__date--curr {
+  font-size: 0.7rem;
+  color: #3a3d42;
 }
