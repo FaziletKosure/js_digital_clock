@@ -20,32 +20,32 @@ span {
 
 .hour {
   position: absolute;
-  left: 70px;
+  left: 30px;
 }
 .min {
   position: absolute;
-  left: 240px;
+  left: 150px;
 }
 .sec {
   position: absolute;
-  left: 390px;
+  left: 260px;
 }
 .am_pm {
   position: absolute;
-  left: 540px;
+  left: 360px;
 }
 #clock {
-  font-size: 100px;
+  font-size: 60px;
   text-align: center;
-  width: 750px;
+  width: 500px;
   background-color: rgb(191, 113, 75);
   color: white;
-  height: 200px;
+  height: 100px;
   position: relative;
   left: 8%;
-  margin-top: 220px;
+  margin-top: 250px;
   padding: 30px 50px;
-  border-radius: 5px;
+  border-radius: 75px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
   /* vertical-align: middle; */
 }
@@ -59,9 +59,17 @@ span {
   color: grey;
   position: absolute;
   z-index: 1;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 .clock__date--curr {
   font-size: 0.7rem;
   color: #3a3d42;
+}
+#demo {
+  position: absolute;
+  color: #3a3d42;
+  left: 528px;
+  font-size: 20px;
+  margin-top: -31px;
+  z-index: 1;
 }

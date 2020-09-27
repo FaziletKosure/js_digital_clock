@@ -3,6 +3,8 @@
 let dayNames = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 let time = new Date();
+document.getElementById("demo").innerHTML = time.toDateString().slice(3);
+console.log(time);
 let DateString = '';
 for (let i = 0; i < dayNames.length; i++) {
   if (i == time.getDay()) {
