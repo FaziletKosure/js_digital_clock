@@ -73,3 +73,29 @@ span {
   margin-top: -31px;
   z-index: 1;
 }
+@media (max-width: 600px) {
+  body {
+    font-size: 16px !important;
+  }
+  #clock {
+    font-size: 40px !important;
+    width: 350px !important;
+    left: 2 !important;
+  }
+  .clock__date {
+    margin-left: 14% !important;
+    font-size: ;
+  }
+  .hour {
+    left: 10px !important;
+  }
+  .min {
+    left: 100px;
+  }
+  .sec {
+    left: 170px;
+  }
+  .am_pm {
+    left: 250px;
+  }
+}
